@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Sable Dreams</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Noto+Serif+Display:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --orchid: #C67BA8;
+    --orchid-light: #E0A8CB;
+    --orchid-pale: #F5E8F2;
+    --spine: #6E3456;
+    --gold: #C9A84C;
+    --ivory: #FDFAF7;
+    --cream: #F8F2EC;
+    --stone: #7A6E6A;
+    --dark: #2C2523;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--ivory);
+    color: var(--dark);
+    line-height: 1.8;
+  }
+
+  /* NAV */
+  nav {
+    background: rgba(253,250,247,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(198,123,168,0.15);
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--orchid);
+    text-decoration: none;
+  }
+  .nav-back {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--stone);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .nav-back:hover { color: var(--orchid); }
+
+  /* HEADER */
+  .policy-header {
+    background: var(--spine);
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .policy-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(198,123,168,0.2) 0%, transparent 70%);
+  }
+  .header-seal {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 35%, #E0A8CB, #C67BA8 50%, #9E5A85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+    box-shadow: 0 6px 24px rgba(198,123,168,0.3);
+    position: relative;
+  }
+  .header-seal span {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #E2C87A;
+  }
+  .policy-header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  .policy-header h2 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    font-weight: 300;
+    color: rgba(255,255,255,0.75);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  .header-dates {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .header-date {
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+  }
+  .header-date span {
+    color: var(--orchid-light);
+    font-weight: 400;
+  }
+
+  /* GOLD RULE */
+  .gold-rule {
+    width: 50px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1.5rem auto;
+  }
+
+  /* COMMITMENT BOX */
+  .commitment {
+    background: var(--orchid-pale);
+    border: 1px solid rgba(198,123,168,0.2);
+    border-left: 4px solid var(--gold);
+    padding: 1.5rem 2rem;
+    margin: 2.5rem 0;
+    border-radius: 2px;
+  }
+  .commitment p {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--spine);
+    line-height: 1.7;
+  }
+
+  /* MAIN CONTENT */
+  .policy-body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+  }
+
+  /* INTRO */
+  .intro {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--stone);
+    line-height: 1.9;
+    margin-bottom: 1rem;
+  }
+
+  /* SECTION */
+  .policy-section {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(198,123,168,0.15);
+  }
+  .section-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .section-num {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgba(198,123,168,0.3);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--spine);
+  }
+  .section-body {
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--stone);
+    line-height: 1.9;
+    margin-bottom: 1rem;
+  }
+
+  /* SUB HEADING */
+  .sub-heading {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--spine);
+    margin: 1.5rem 0 0.6rem;
+  }
+
+  /* BULLETS */
+  .policy-list {
+    list-style: none;
+    margin: 0.5rem 0 1rem;
+  }
+  .policy-list li {
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--stone);
+    line-height: 1.8;
+    padding: 0.3rem 0 0.3rem 1.5rem;
+    position: relative;
+  }
+  .policy-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--orchid-light);
+    font-weight: 300;
+  }
+
+  /* CALLOUT */
+  .callout {
+    background: var(--orchid-pale);
+    border-left: 3px solid var(--orchid);
+    padding: 1rem 1.4rem;
+    margin: 1.2rem 0;
+    border-radius: 0 2px 2px 0;
+  }
+  .callout-label {
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--orchid);
+    margin-bottom: 0.3rem;
+  }
+  .callout p {
+    font-size: 0.86rem;
+    font-weight: 300;
+    color: var(--spine);
+    line-height: 1.7;
+  }
+
+  /* STRONG CALLOUT — do not collect */
+  .strong-callout {
+    background: white;
+    border: 1px solid rgba(198,123,168,0.15);
+    border-left: 3px solid var(--gold);
+    padding: 0.75rem 1.2rem;
+    margin: 0.5rem 0;
+    border-radius: 0 2px 2px 0;
+    font-size: 0.86rem;
+    font-weight: 400;
+    color: var(--spine);
+    line-height: 1.6;
+  }
+
+  /* CONTACT TABLE */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1.5rem;
+    margin: 1rem 0;
+  }
+  .contact-label {
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--orchid);
+    padding-top: 0.1rem;
+  }
+  .contact-value {
+    font-size: 0.86rem;
+    font-weight: 300;
+    color: var(--dark);
+    line-height: 1.6;
+  }
+  .contact-value a {
+    color: var(--orchid);
+    text-decoration: none;
+  }
+  .contact-value a:hover { text-decoration: underline; }
+
+  /* FOOTER */
+  footer {
+    background: var(--spine);
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
+  .footer-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  .footer-taglines {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 0.3rem;
+  }
+  .footer-sub {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 1rem;
+  }
+  .footer-copy {
+    font-size: 0.65rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.08em;
+  }
+  .footer-home {
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--orchid-light);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(224,168,203,0.3);
+    padding-bottom: 1px;
+    transition: color 0.3s;
+  }
+  .footer-home:hover { color: white; }
+
+  @media (max-width: 600px) {
+    nav { padding: 1rem 1.5rem; }
+    .policy-header { padding: 3.5rem 1.5rem 3rem; }
+    .policy-body { padding: 2rem 1.5rem 4rem; }
+    .header-dates { flex-direction: column; gap: 0.5rem; align-items: center; }
+    .contact-grid { grid-template-columns: 1fr; gap: 0.2rem; }
+    .contact-label { margin-top: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">Sable Dreams</a>
+  <a href="/" class="nav-back">← Back to Home</a>
+</nav>
+
+<header class="policy-header">
+  <div class="header-seal"><span>SD</span></div>
+  <h1>Sable Dreams</h1>
+  <h2>Privacy Policy</h2>
+  <div class="gold-rule"></div>
+  <div class="header-dates">
+    <span class="header-date">Effective Date: <span>February 1, 2026</span></span>
+    <span class="header-date">Last Updated: <span>July 28, 2026</span></span>
+    <span class="header-date">Contact: <span>jones@sabledreams.com</span></span>
+  </div>
+</header>
+
+<main class="policy-body">
+
+  <p class="intro">Welcome to Sable Dreams. Sable Dreams is a digital journaling and wellness application created by Sable Dreams LLC, a Georgia limited liability company. We are deeply committed to your privacy.</p>
+  <p class="intro">This Privacy Policy explains what information we collect, how we use it, and your rights. By downloading, accessing, or using the Sable Dreams app or website (sabledreams.com), you agree to the practices described in this policy.</p>
+
+  <div class="commitment">
+    <p>Our commitment: We do not collect, read, store, or share your personal journal entries, mood logs, AI conversations, or saved book lists. Your inner life stays yours.</p>
+  </div>
+
+  <!-- 1 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">01</span>
+      <span class="section-title">Information We Collect</span>
+    </div>
+    <p class="section-body">Sable Dreams collects only the minimum information necessary to operate and manage the app. We collect three categories of data:</p>
+
+    <p class="sub-heading">A. Account Information</p>
+    <p class="section-body">When you create an account, we collect:</p>
+    <ul class="policy-list">
+      <li>Your name</li>
+      <li>Your email address</li>
+      <li>Your password (stored in encrypted form — we never see your actual password)</li>
+    </ul>
+    <p class="section-body">This information is used solely to create and manage your account, authenticate your identity, and communicate essential service updates.</p>
+
+    <p class="sub-heading">B. Subscription Information</p>
+    <p class="section-body">When you subscribe to a paid plan, we collect:</p>
+    <ul class="policy-list">
+      <li>Subscription tier (free or paid)</li>
+      <li>Subscription status (active, expired, cancelled)</li>
+      <li>Billing date and renewal information</li>
+    </ul>
+    <p class="section-body">Payment processing is handled entirely by Apple App Store (iOS) or Google Play (Android). We do not collect, store, or have access to your credit card number or full payment details.</p>
+
+    <p class="sub-heading">C. App Usage Timestamps & Feature Metrics</p>
+    <p class="section-body">To manage the business operations and performance of the Sable Dreams app, we collect the following anonymized usage data:</p>
+    <ul class="policy-list">
+      <li>When the app is opened and closed (session timestamps)</li>
+      <li>General time-of-day usage patterns (e.g., morning, midday, evening)</li>
+      <li>App feature usage metrics — which features are accessed and how frequently (e.g., journal opened, Sable accessed, mood check-in completed, manifestation board viewed)</li>
+      <li>Total number of feature interactions across time periods</li>
+      <li>Subscription feature access patterns (free vs. paid feature usage rates)</li>
+    </ul>
+    <div class="callout">
+      <div class="callout-label">Important</div>
+      <p>We record WHEN and HOW OFTEN features are used — not WHAT you write, say, or save. The content of your journal entries, AI conversations, mood logs, and saved books is never transmitted to or stored on our servers.</p>
+    </div>
+    <p class="section-body">This usage data is collected exclusively for internal business management purposes — to understand how the app is performing and how to improve the experience. All data is anonymized and aggregated. It is never linked to your personal identity in our analytics systems and is never shared with or sold to third parties.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">02</span>
+      <span class="section-title">What We Do NOT Collect</span>
+    </div>
+    <p class="section-body">We want to be crystal clear about what we do not collect:</p>
+    <div class="strong-callout">We do NOT collect the content of your journal entries.</div>
+    <div class="strong-callout">We do NOT collect your mood logs or self-care activity details.</div>
+    <div class="strong-callout">We do NOT collect your Sable AI conversations.</div>
+    <div class="strong-callout">We do NOT collect your saved books or Dream Library contents.</div>
+    <div class="strong-callout">We do NOT collect your Manifestation Board images or intentions.</div>
+    <div class="strong-callout">We do NOT sell your personal information to anyone, ever.</div>
+    <div class="strong-callout">We do NOT use your data for advertising or ad targeting.</div>
+    <p class="section-body" style="margin-top:1rem;">All personal content you create inside the Sable Dreams app is private to you.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">03</span>
+      <span class="section-title">How We Use Your Information</span>
+    </div>
+    <p class="section-body">The limited information we collect is used only for the following purposes:</p>
+    <ul class="policy-list">
+      <li>To create, authenticate, and manage your account</li>
+      <li>To communicate essential service updates, account notices, and support responses</li>
+      <li>To process and manage your subscription status</li>
+      <li>To analyze anonymized, aggregated usage timestamps and feature metrics to understand app performance and improve the user experience</li>
+      <li>To comply with legal obligations and protect the safety of our users and services</li>
+    </ul>
+  </div>
+
+  <!-- 4 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">04</span>
+      <span class="section-title">AI Features — Sable, Your AI Life Coach</span>
+    </div>
+    <p class="section-body">Sable Dreams includes an AI-powered life coaching feature called Sable, designed to support your personal growth, journaling practice, and emotional wellbeing.</p>
+    <ul class="policy-list">
+      <li>Sable is powered by artificial intelligence and is not a licensed therapist, counselor, psychologist, or medical professional</li>
+      <li>Sable does not provide medical advice, mental health treatment, crisis intervention, or emergency services</li>
+      <li>Your conversations with Sable are processed in real time to generate responses and are not stored on our servers or shared with third parties</li>
+      <li>The "Not medical advice" notice displayed in the app applies to all Sable interactions</li>
+    </ul>
+    <div class="callout">
+      <div class="callout-label">In a Crisis?</div>
+      <p>If you are experiencing a mental health emergency, please contact a licensed professional or call 988 (Suicide & Crisis Lifeline) or 911 immediately.</p>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">05</span>
+      <span class="section-title">How We Share Your Information</span>
+    </div>
+    <p class="section-body">We do not sell your personal information. We share information only in the following limited circumstances:</p>
+
+    <p class="sub-heading">A. Service Providers</p>
+    <ul class="policy-list">
+      <li>OpenAI — to power the Sable AI feature (real-time processing only; conversations are not stored)</li>
+      <li>Apple App Store / Google Play — to manage subscription billing</li>
+      <li>Cloud hosting providers — to run app infrastructure</li>
+    </ul>
+    <p class="section-body">All service providers are required to protect your data and may only use it to perform services on our behalf.</p>
+
+    <p class="sub-heading">B. Legal Requirements</p>
+    <p class="section-body">We may disclose your information if required by law, regulation, legal process, or governmental request, or to protect the rights, safety, or property of Sable Dreams LLC or our users.</p>
+
+    <p class="sub-heading">C. Business Transfers</p>
+    <p class="section-body">In the event of a merger, acquisition, or sale of assets, your account information may be transferred. We will notify you and provide options regarding your data.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">06</span>
+      <span class="section-title">Data Security</span>
+    </div>
+    <p class="section-body">We implement reasonable technical and organizational measures to protect your account information, including:</p>
+    <ul class="policy-list">
+      <li>Encrypted data transmission (HTTPS/SSL)</li>
+      <li>Encrypted password storage — we never store your password in plain text</li>
+      <li>Access controls limiting who can access account data</li>
+      <li>Regular security monitoring and reviews</li>
+    </ul>
+    <p class="section-body">Because your personal content is stored on your device and not transmitted to our servers, it is protected by your device's own security — including your passcode, Face ID, or Touch ID.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">07</span>
+      <span class="section-title">Data Retention</span>
+    </div>
+    <ul class="policy-list">
+      <li>Your account information is retained for as long as your account is active</li>
+      <li>Anonymized usage timestamp and feature metric data may be retained in aggregate form for up to 12 months for analytics purposes</li>
+      <li>After account deletion, certain information may be retained for up to 90 days for backup and legal compliance, after which it is permanently deleted</li>
+    </ul>
+    <p class="section-body">You may request deletion of your account and data at any time by contacting jones@sabledreams.com.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">08</span>
+      <span class="section-title">Your Rights and Choices</span>
+    </div>
+    <ul class="policy-list">
+      <li>Access: request a copy of the account information we hold about you</li>
+      <li>Correction: request that we correct inaccurate information</li>
+      <li>Deletion: request that we delete your account and associated data</li>
+      <li>Opt-Out: opt out of non-essential communications at any time</li>
+      <li>Withdraw Consent: withdraw consent for any processing based on your consent</li>
+    </ul>
+    <div class="callout">
+      <div class="callout-label">Contact Us</div>
+      <p>To exercise any of these rights, email us at jones@sabledreams.com. We will respond within 30 days.</p>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">09</span>
+      <span class="section-title">Children's Privacy</span>
+    </div>
+    <p class="section-body">Sable Dreams is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided information to us, please contact us at jones@sabledreams.com and we will promptly delete it.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">10</span>
+      <span class="section-title">Subscriptions and Payments</span>
+    </div>
+    <p class="section-body">Sable Dreams offers free and paid subscription tiers at $5.00/month or $45.00/year.</p>
+    <ul class="policy-list">
+      <li>All payments are processed by Apple App Store (iOS) or Google Play (Android)</li>
+      <li>We do not directly collect or store your payment card information</li>
+      <li>Subscription management and cancellation is handled through your Apple ID or Google Account settings</li>
+      <li>Refunds are subject to Apple App Store or Google Play refund policies</li>
+    </ul>
+    <p class="section-body">AI-powered features (Sable) are available to paid subscribers only.</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">11</span>
+      <span class="section-title">California Privacy Rights (CCPA)</span>
+    </div>
+    <p class="section-body">If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+    <ul class="policy-list">
+      <li>The right to know what personal information we collect and how we use it</li>
+      <li>The right to delete your personal information</li>
+      <li>The right to opt out of the sale of personal information (Note: we do not sell personal information)</li>
+      <li>The right to non-discrimination for exercising your privacy rights</li>
+    </ul>
+    <p class="section-body">To submit a California privacy request, email jones@sabledreams.com with the subject line "California Privacy Request."</p>
+  </div>
+
+  <!-- 12 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">12</span>
+      <span class="section-title">Changes to This Privacy Policy</span>
+    </div>
+    <ul class="policy-list">
+      <li>We will update the "Last Updated" date at the top of this policy when changes are made</li>
+      <li>We will notify you through the app or by email if changes are material</li>
+      <li>The updated policy will always be available at sabledreams.com/privacy</li>
+    </ul>
+    <p class="section-body">Your continued use of the app after any changes constitutes your acceptance of the updated policy.</p>
+  </div>
+
+  <!-- 13 -->
+  <div class="policy-section">
+    <div class="section-heading">
+      <span class="section-num">13</span>
+      <span class="section-title">Contact Us</span>
+    </div>
+    <p class="section-body">Questions, concerns, or requests? We're here.</p>
+    <div class="contact-grid">
+      <span class="contact-label">Email</span>
+      <span class="contact-value"><a href="mailto:jones@sabledreams.com">jones@sabledreams.com</a></span>
+      <span class="contact-label">Website</span>
+      <span class="contact-value"><a href="https://sabledreams.com">sabledreams.com</a></span>
+      <span class="contact-label">Social</span>
+      <span class="contact-value">@thesabledreamer</span>
+    </div>
+    <p class="section-body" style="margin-top:1rem;">We aim to respond to all inquiries within 5–7 business days.</p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-logo">Sable Dreams</div>
+  <div class="footer-taglines">Dream Boldly. Live Softly.</div>
+  <div class="footer-sub">Dream · Believe · Become</div>
+  <div class="footer-copy">© 2026 Sable Dreams LLC. All rights reserved. · jones@sabledreams.com</div>
+  <a href="/" class="footer-home">← Back to Home</a>
+</footer>
+
+</body>
+</html>
